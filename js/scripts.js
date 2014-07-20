@@ -24,11 +24,17 @@ $(document).ready(function(){
     var result = triFind(side1,side2,side3);
     $('.hideMe').show();
     $('span#result').text(result + "!");
+
+// TRIANGLE VISUAL //
     if (result === 'an impossible triangle!') {
     } else {
       $('#triangle').css({'border-left': (side1*25) + 'px solid transparent'});
       $('#triangle').css({'border-right': (side2*25) + 'px solid transparent'});
       $('#triangle').css({'border-bottom': (side3*25) + 'px solid red'});
+      $('.below').css({'padding-left': (side3*15 + 'px')});
+      $('span#side1').text(side1 + " in");
+      $('span#side2').text(side2 + " in");
+      $('span#side3').text(side3 + " in");
     }
   });
 });

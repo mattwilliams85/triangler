@@ -13,13 +13,13 @@
         <form id="triangler">
           <div class="form-group">
             <label for="side1">Side #1</label>
-            <input id="side1" type="number" placeholder="Add length here..">
+            <input id="side1" type="number" placeholder="Length in inches..">
             <br>
             <label for="side2">Side #2</label>
-            <input id="side2" type="number" placeholder="Add length here..">
+            <input id="side2" type="number" placeholder="Length in inches..">
             <br>
             <label for="side3">Side #3</label>
-            <input id="side3" type="number" placeholder="Add length here..">
+            <input id="side3" type="number" placeholder="Length in inches..">
         </div>
         <button type="submit" class="btn btn-success">Find out!</button>
       </form>
@@ -27,8 +27,11 @@
       <div class="hideMe">
         <p>Your triangle is <span id="result"></span></p>
       </div>
-      <div id="triangle" class="hideMe">
-      </div>
+      <div class="box">
+      <div class="left"><span id="side1"></div>
+      <div id="triangle" class="hideMe"></div>
+      <div class="right"><span id="side2"></div>
+      <div class="below"><span id="side3"></div>
     </div>
   </body>
 </html>
