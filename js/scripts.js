@@ -31,6 +31,7 @@ $(document).ready(function(){
       $('#triangle').css({'border-left': (side1*25) + 'px solid transparent'});
       $('#triangle').css({'border-right': (side2*25) + 'px solid transparent'});
       $('#triangle').css({'border-bottom': (side3*25) + 'px solid red'});
+      // Displays # inches around triangle //
       $('.below').css({'padding-left': (side3*15 + 'px')});
       $('span#side1').text(side1 + " in");
       $('span#side2').text(side2 + " in");
