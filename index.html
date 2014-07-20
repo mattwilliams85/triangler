@@ -10,28 +10,24 @@
   <body>
     <div class="container">
       <h1>Triangle Calculator</h1>
-      <div class="col-md-6">
         <form id="triangler">
           <div class="form-group">
             <label for="side1">Side #1</label>
-            <input id="side1" type="text" placeholder="Add length here..">
-          </div>
-          <div class="form-group">
+            <input id="side1" type="number" placeholder="Add length here..">
+            <br>
             <label for="side2">Side #2</label>
-            <input id="side2" type="text" placeholder="Add length here..">
-          </div>
-          <div class="form-group">
+            <input id="side2" type="number" placeholder="Add length here..">
+            <br>
             <label for="side3">Side #3</label>
-            <input id="side3" type="text" placeholder="Add length here..">
-          </div>
-          <button type="submit" class="btn btn-success">Find out!</button>
+            <input id="side3" type="number" placeholder="Add length here..">
         </div>
+        <button type="submit" class="btn btn-success">Find out!</button>
       </form>
-      <div>
-
+      <br>
+      <div class="hideMe">
+        <p>Your triangle is <span id="result"></span></p>
       </div>
-      <div id="result">
-        <p><span class="year"></span> is <span class="not"></span> a leap year.</p>
+      <div id="triangle" class="hideMe">
       </div>
     </div>
   </body>
