@@ -12,8 +12,8 @@ describe("triFind", function() {
     triFind(3,3,4).should.equal("an isosceles");
   });
   it("Tells you when the dimensions are too long for a triangle", function() {
-    triFind(1,20,7).should.equal("an impossible triangle!");
-    triFind(5,1,2).should.equal("an impossible triangle!");
+    triFind(1,20,7).should.equal("an impossible");
+    triFind(5,1,2).should.equal("an impossible");
   });
 });
 

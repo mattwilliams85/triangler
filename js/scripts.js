@@ -21,6 +21,7 @@ $(document).ready(function(){
     var side1 = parseInt($("input#side1").val());
     var side2 = parseInt($("input#side2").val());
     var side3 = parseInt($("input#side3").val());
+    var color = $("input#color").val();
     var result = triFind(side1,side2,side3);
     var max = Math.max(side1,side2,side3); 
     var min = Math.min(side1,side2,side3);
@@ -47,7 +48,7 @@ $(document).ready(function(){
     } else if (result === 'a scalene') {
       $('.box').show();
       $('#triangle').css({'border-left': (min*25) + 'px solid transparent'});
-      $('#triangle').css({'border-bottom': (mid*25) + 'px solid #E80C7A'});
+      $('#triangle').css({'border-bottom': (mid*25) + 'px solid ' + color});
 // Displays # inches around a scalene triangle //
       $('.below').css({'padding-left': (min*15 + 'px')});
       $('#right').css({'margin-top': (mid*13 + 'px')});
@@ -72,7 +73,7 @@ $(document).ready(function(){
 // Displays # inches around a isosceles/equilateral triangle //     
       $('#triangle').css({'border-right': (odd*25) + 'px solid transparent'});
       $('#triangle').css({'border-left': (odd*25) + 'px solid transparent'});
-      $('#triangle').css({'border-bottom': (same*25) + 'px solid #E80C7A'});
+      $('#triangle').css({'border-bottom': (same*25) + 'px solid '+ color});
       $('#bottom').css({'padding-left': (odd*25 + 'px')});
       $('#right').css({'margin-top': (same*13 + 'px')});
       $('#right').css({'padding-left': (odd + 'px')});
